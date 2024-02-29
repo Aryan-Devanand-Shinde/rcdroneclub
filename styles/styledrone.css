@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background: #FFF;
+	font-family: 'Open Sans', sans-serif;
+    
+}
+.qq{
+  display: flex;
+  width: 80%;height: auto;
+  background-color: rgba(240, 248, 255, 0.463);
+  border-radius: 12px;
+}
+
+.about-content {
+	width: 100%;
+	/* position: relative; */
+	justify-content: center;
+	/* flex-wrap: wrap; */
+	display: flex;
+	align-items: center;
+  	padding-top: 30px;
+}
+.about-content .side-text {
+	width: 40%;
+  	height: fit-content;
+	padding: 5px 5px;
+	background: #fff;
+	box-shadow: 2px 0 100px rgba(0.3,0.3,0.3,0.3);
+	border-radius: 5px;
+	text-align: justify;
+	/* line-height: 22px; */
+	/* opacity: 0; */
+	transform: translateX(-100px);
+	transition: 1s ease-in-out;
+}
+.about-content .side-text-appear {
+	opacity: 1;
+	transform: translateX(0px);
+}
+.about-content .side-text h2 {
+	padding: 10px;
+}
+
+.leeft{
+  margin-left: 40px;
+  border-radius: 5px;
+  box-shadow: 2px 0 100px rgba(0.3,0.3,0.3,0.3);
+}
+
+
+/* About Us  */
+.aboutus{
+	padding-top: 80px;
+}
+
+.info_about_us{
+	display: flex;
+}
+.imgaboutus img{
+	width: 100%;
+}
+.info p{
+	font-size: 2rem;
+}
+
+
+ @media screen and (max-width: 425px) {
+  .qq{
+    display: inline;
+  }
+  .side-text{
+    margin-left: 30px;
+  }
+  .aboutus{
+	padding-top: 8%;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .container-fluid{
+    position: fixed;padding-top: 50px;
+  }
+}
