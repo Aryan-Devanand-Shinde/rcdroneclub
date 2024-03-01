@@ -39,11 +39,12 @@
         
         
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <!--Navbar-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-top: 0;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-top: 0;z-index: 10;">
             <div class="container-fluid" style="background-color: rgba(112, 112, 112, 0.936);color: aliceblue;">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -61,13 +62,13 @@
                         <button type="button" class="btn" ><a class="nav-link" href="#aboutus"style="color: aliceblue;">About</a></button>
                       </li>
                       <li class="nav-item">
-                        <button type="button" class="btn" ><a class="nav-link" href="#"style="color: aliceblue;">Team</a></button>
+                        <button type="button" class="btn" ><a class="nav-link" href="#team"style="color: aliceblue;">Team</a></button>
                       </li>
                       <li class="nav-item">
                         <button type="button" class="btn" ><a class="nav-link" href="#"style="color: aliceblue;">Events</a></button>
                       </li>
                       <li class="nav-item">
-                        <button type="button" class="btn" ><a class="nav-link" href="#"style="color: aliceblue;">Gallery</a></button>
+                        <button type="button" class="btn" ><a class="nav-link" href="#mile"style="color: aliceblue;">Gallery</a></button>
                       </li>
                       <li class="nav-item">
                         <button type="button" class="btn" ><a class="nav-link" href="#"style="color: aliceblue;">Testimonials</a></button>
@@ -130,16 +131,14 @@
           <div class="info">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, delectus nostrum necessitatibus, vel deleniti voluptatem voluptatum praesentium quae obcaecati itaque quisquam. Repudiandae alias, consequatur perspiciatis a dolor non totam dolore!</p>
           </div>
-          
-
         </div>
       </div>
 <hr>
       <!--team-->
-      <div class="team"style="font-size: 3rem;padding-top: 80px;">
+      <div class="team" id="team" style="font-size: 3rem;padding-top: 80px;">
         <h1 style="text-align: left;"><b style="font-size: 3rem;padding-left: 30px;">Team Heads</b></h1>
         <div class="totalcard">
-          <div class="card"style="z-index: -1;">
+          <div class="card">
             <center><img src="./WhatsApp Image 2024-03-01 at 00.35.10_dcb4c873.jpg"></center>
             <center><div class="card-title">Vishal Yadav</div>
               <div class="card-title">(Vice Captain)</div>
@@ -149,7 +148,7 @@
             </div>
             </center>
           </div>
-          <div class="card"style="z-index: -1;">
+          <div class="card">
             <center><img src="./WhatsApp Image 2024-03-01 at 00.41.05_35f3be77.jpg"></center>
             <center><div class="card-title">Manas Wagh</div>
               <div class="card-title">(Captain)</div>
@@ -159,7 +158,7 @@
             </div>
             </center>
           </div>
-          <div class="card"style="z-index: -1;">
+          <div class="card">
             <center><img src="./WhatsApp Image 2024-03-01 at 00.35.11_c2f32714.jpg"></center>
             <center><div class="card-title">Aatish Jawalkar</div>
               <div class="card-title">(AIML Head)</div>
@@ -173,9 +172,66 @@
       </div>
 
       <!--gallery-->
-      <div class="gallery">
-        <div></div>
-      </div>
+      <section class="product" id="mile"> 
+        <h2 class="product-category" >Mile Stone</h2>
+        <button class="pre-btn"><img src="./assets/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="./assets/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image"> 
+                    <img src="./assets/meeting.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/dli.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/grp.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/pjn.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/tekdi.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <!-- <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/meeting.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/meeting.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/meeting.jpg" class="product-thumb" alt="">
+                </div>   
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/meeting.jpg" class="product-thumb" alt="">
+                </div> 
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/meeting.jpg" class="product-thumb" alt="">
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <div class="glry">
+      <a href="./Gallery.html"><button type="button" class="btn btn-outline-primary gll"><b>Gallery</b></button></a>
+    </div>
     </main>
 
     <footer>
@@ -192,6 +248,8 @@
             <a href="https://www.linkedin.com/company/team-vajra-mmcoe/" class="hvr"><i class="fa-brands fa-linkedin social "></i><h>linked in</h><br></a>
             <hr>
             <a href="https://www.facebook.com/teamvajra.mmcoe?mibextid=LQQJ4dv" class="hvr"><i class="fa-brands fa-square-facebook"></i><h>facebook</h></a>
+            <hr>
+            <a href="" class="hvr"><i class="fa-brands fa-github"></i><h>Github repo</h></a>
           </div>
         </div>
         <hr>
@@ -199,6 +257,6 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
