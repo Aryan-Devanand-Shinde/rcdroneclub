@@ -1,4 +1,10 @@
 /* Contact us */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
 .csec {
 	background: linear-gradient(to right, #FA4B37, #27b1df);
 	background-attachment: fixed; 
