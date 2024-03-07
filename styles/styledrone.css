@@ -458,15 +458,20 @@ a{
     color: #FFF;
   }
 
+  .cntrr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .social{
-    text-align: center;
+    
+    /* text-align: center; */
     /* align-items: center; */
     justify-content: center;
   }
   .social h1{
     font-size: 3rem;
   }
-  
 }
 
 @media screen and (min-width: 1360px) {
