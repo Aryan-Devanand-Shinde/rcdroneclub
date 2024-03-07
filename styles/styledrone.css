@@ -446,6 +446,7 @@ a{
    }
 }
 
+
 @media screen and (max-width: 690px) {
   .footr{
     display: inline;
@@ -478,4 +479,8 @@ a{
   .container-fluid{
     position: fixed;padding-top: 50px;
   }
+}
+
+.container-fluid{
+  background-color: rgba(112, 112, 112, 0.936);
 }
