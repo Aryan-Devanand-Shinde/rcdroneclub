@@ -36,7 +36,14 @@
           display: flex;
         }
 
+        .sponsors{
+          display: flex;
+          justify-content: space-around;
+        }
+
+        
     </style>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -73,10 +80,11 @@
                       </li>
                 </ul>
                 
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit"style="color: aliceblue;">Search</button>
+                <form class="d-flex" role="search" onsubmit="return searchContent()">
+                  <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" style="color: aliceblue;">Search</button>
                 </form>
+                
               </div>
             </div>
           </nav>
@@ -114,6 +122,15 @@
             <h2 style="text-align: center;">Hexa copter</h2>
           </div>
         </div>
+
+        <div class="about-content">
+          <div class="side-image">
+            <img class="sideImage leeft" src="./assets/FPV.jpg" style="width: 50%;">
+          </div>
+          <div class="side-text">
+            <h2 style="text-align: center;">FPV</h2>
+          </div>
+        </div>
       </div>
 <hr>
       <div class="aboutus"id="aboutus"style="font-size: 3rem;padding-left: 30px;">
@@ -132,32 +149,32 @@
       <div class="team" id="team" style="font-size: 3rem;padding-top: 80px;">
         <h1 style="text-align: left;"><b style="font-size: 3rem;padding-left: 30px;">Team Heads</b></h1>
         <div class="totalcard">
-          <div class="card">
-            <center><img src="./assets/manas.jpg"></center>
-            <center><div class="card-title">Manas Wagh</div>
-              <div class="card-title">(Captain)</div>
+          <div class="card bggrey" style="background-color: #5f6164; color: aliceblue;">
+            <center><img src="./assets/sanam.jpg"></center>
+            <center><div class="card-title"  style=" color: aliceblue;font-size: 1.4rem;">Manas Wagh</div>
+              <div class="card-title"  style=" color: aliceblue;font-size: 1.5rem;">(Captain)</div>
             <div id="detail">
-              <p>“ Real education should consist of drawing the goodness and the best out of our own students.  “</p>
+              <p style="font-size: 1.2rem;">“ Real education should consist of drawing the goodness and the best out of our own students.  “</p>
               <div class="duty"></div>
             </div>
             </center>
           </div>
-          <div class="card">
-            <center><img src="./assets/vishal.jpg"></center>
-            <center><div class="card-title">Vishal Yadav</div>
-              <div class="card-title">(Vice Captain)</div>
+          <div class="card bggrey"  style="background-color: #5f6164; color: aliceblue;">
+            <center><img src="./assets/lahsiv.jpg"></center>
+            <center><div class="card-title"  style="color: aliceblue;font-size: 1.4rem;">Vishal Yadav</div>
+              <div class="card-title "  style=" color: aliceblue; font-size: 1.5rem;">(Vice Captain)</div>
             <div id="detail">
-              <p>“ Open the door of curiosity, and the journey of learning becomes endless.“</p>
+              <p style="font-size: 1.2rem;">“ Open the door of curiosity, and the journey of learning becomes endless.“</p>
               <div class="duty"></div>
             </div>
             </center>
           </div>
-          <div class="card">
-            <center><img src="./assets/aatish.jpg"></center>
-            <center><div class="card-title">Aatish Jawalkar</div>
-              <div class="card-title">(AIML Head)</div>
+          <div class="card bggrey" style="background-color: #5f6164; color: aliceblue;">
+            <center><img src="./assets/hsitaa.jpg"></center>
+            <center><div class="card-title"  style=" color: aliceblue;font-size: 1.4rem;">Aatish Jawalkar</div>
+              <div class="card-title"  style="color: aliceblue; font-size: 1.5rem;">(AIML Head)</div>
             <div id="detail">
-              <p>“ Instill the love of learning, and curiosity will be the compass for journey.“</p>
+              <p style="font-size: 1.2rem;">“ Instill the love of learning, and curiosity will be the compass for journey.“</p>
               <div class="duty"></div>
             </div>
             </center>
@@ -194,7 +211,19 @@
           </div>
         </div>
       </div>
+      <div class="crds" style="display: flex; justify-content: space-evenly;padding-top: 10px;">
+        
+        <div class="card1" style="width: 30rem;">
+          <img src="./grnddy.jpg" class="card-img-top " alt="MSME expo Pune" style="border-radius: 8px;">
+          <div class="card-body">
+            <p class="card-text"><b>Demonstration for competition</b></p>
+            <hr>
+          </div>
+        </div>
+        
+      </div>
     </div>
+
     <hr>
       <!--gallery-->
       <section class="product" id="mile"> 
@@ -237,21 +266,24 @@
                     <img src="./assets/plate.jpg" class="product-thumb" alt="">
                 </div>
             </div>
-            <!-- <div class="product-card">
-                <div class="product-image">
-                    <img src="./assets/meeting.jpg" class="product-thumb" alt="">
-                </div>   
-            </div>
+
             <div class="product-card">
-                <div class="product-image">
-                    <img src="./assets/meeting.jpg" class="product-thumb" alt="">
-                </div> 
+              <div class="product-image">
+                  <img src="./assets/babytv.jpg" class="product-thumb" alt="">
+              </div>
             </div>
+            
             <div class="product-card">
-                <div class="product-image">
-                    <img src="./assets/meeting.jpg" class="product-thumb" alt="">
-                </div>
-            </div> -->
+              <div class="product-image">
+                <img src="./assets/fpv3.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./assets/clb.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
         </div>
     </section>
     <div class="glry">
@@ -270,8 +302,22 @@
     
     </main>
 
+<!-- FOOTER -->
     <footer id="ffootteerr" style="background-color: rgba(112, 112, 112, 0.936) ;" >
       <div class="last" style="background-color: rgba(112, 112, 112, 0.936);">
+        <h1 style="color: aliceblue; padding-top: 5px;text-align: center;">Sponsored By:</h1>
+        <!-- SPONSORS -->
+        <div class="sponsors" style="display: flex;">
+          <div class="img" style="justify-content: space-around;">
+            <!-- ALTIUM -->
+            <a href="https://www.altium.com/in/altium-designer/free-trial/p?TrackingId=PM21&_bk=altium&_bt=&_bm=e&_bn=o&_bg=1227055996920978&utm_source=bing&utm_medium=cpc&utm_campaign=ADV%7CLEADS%7CSEARCH%7CAltium%20Designer%7CPROMO%20-%20AD24%7CIND%7Cv1.3%7C05-02-2024&utm_term=altium&utm_content=BRAND%7CAltium%20Designer%7CPHRASE" class="alan"><img src="./assets/Altium_Logo_BLK (3) (2).svg"style="width:45%;height:auto; "></a>
+            
+            <!-- ANSYS -->
+            <a href="https://www.ansys.com/"><img src="./assets/WhatsApp_Image_2024-08-14_at_23.47.29_992c38f6-removebg-preview.png"style="width:50%;height:auto;padding-left: 70px ; "class="alan"></a>
+          </div>
+        </div>
+        <hr style="color: white;">
+        <!-- MEDIA -->
         <div class="footr">
           <div class="img">
             <img src="./assets/logo.png"style="width:100%;height:auto; ">
